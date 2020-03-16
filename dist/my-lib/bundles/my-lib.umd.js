@@ -100,9 +100,9 @@
     }());
 
     exports.BaseService = BaseService;
+    exports.ByeComponent = ByeComponent;
     exports.HelloComponent = HelloComponent;
     exports.MyLibModule = MyLibModule;
-    exports.ɵa = ByeComponent;
 
     Object.defineProperty(exports, '__esModule', { value: true });
 

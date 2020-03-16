@@ -88,5 +88,5 @@ class BaseService {
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
-export { BaseService, HelloComponent, MyLibModule, ByeComponent as ɵa };
+export { BaseService, ByeComponent, HelloComponent, MyLibModule };
 //# sourceMappingURL=my-lib.js.map
