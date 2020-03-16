@@ -17,6 +17,20 @@ HelloComponent.decorators = [
 
 /**
  * @fileoverview added by tsickle
+ * Generated from: lib/bye-component/bye-component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+class ByeComponent {
+}
+ByeComponent.decorators = [
+    { type: Component, args: [{
+                selector: 'bye-cmp',
+                template: `<h2>BBBBBBBBBBBBBBBB</h2>`
+            }] }
+];
+
+/**
+ * @fileoverview added by tsickle
  * Generated from: lib/my-lib.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
@@ -24,9 +38,15 @@ class MyLibModule {
 }
 MyLibModule.decorators = [
     { type: NgModule, args: [{
-                declarations: [HelloComponent],
+                declarations: [
+                    HelloComponent,
+                    ByeComponent,
+                ],
                 imports: [],
-                exports: [HelloComponent]
+                exports: [
+                    HelloComponent,
+                    ByeComponent,
+                ]
             },] }
 ];
 
@@ -68,5 +88,5 @@ class BaseService {
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
-export { BaseService, HelloComponent, MyLibModule };
+export { BaseService, HelloComponent, MyLibModule, ByeComponent as ɵa };
 //# sourceMappingURL=my-lib.js.map

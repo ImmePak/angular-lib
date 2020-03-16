@@ -20,6 +20,23 @@ var HelloComponent = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
+ * Generated from: lib/bye-component/bye-component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+var ByeComponent = /** @class */ (function () {
+    function ByeComponent() {
+    }
+    ByeComponent.decorators = [
+        { type: Component, args: [{
+                    selector: 'bye-cmp',
+                    template: "<h2>BBBBBBBBBBBBBBBB</h2>"
+                }] }
+    ];
+    return ByeComponent;
+}());
+
+/**
+ * @fileoverview added by tsickle
  * Generated from: lib/my-lib.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
@@ -28,9 +45,15 @@ var MyLibModule = /** @class */ (function () {
     }
     MyLibModule.decorators = [
         { type: NgModule, args: [{
-                    declarations: [HelloComponent],
+                    declarations: [
+                        HelloComponent,
+                        ByeComponent,
+                    ],
                     imports: [],
-                    exports: [HelloComponent]
+                    exports: [
+                        HelloComponent,
+                        ByeComponent,
+                    ]
                 },] }
     ];
     return MyLibModule;
@@ -85,5 +108,5 @@ var BaseService = /** @class */ (function () {
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
-export { BaseService, HelloComponent, MyLibModule };
+export { BaseService, HelloComponent, MyLibModule, ByeComponent as ɵa };
 //# sourceMappingURL=my-lib.js.map

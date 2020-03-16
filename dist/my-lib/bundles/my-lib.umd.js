@@ -23,6 +23,23 @@
 
     /**
      * @fileoverview added by tsickle
+     * Generated from: lib/bye-component/bye-component.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    var ByeComponent = /** @class */ (function () {
+        function ByeComponent() {
+        }
+        ByeComponent.decorators = [
+            { type: core.Component, args: [{
+                        selector: 'bye-cmp',
+                        template: "<h2>BBBBBBBBBBBBBBBB</h2>"
+                    }] }
+        ];
+        return ByeComponent;
+    }());
+
+    /**
+     * @fileoverview added by tsickle
      * Generated from: lib/my-lib.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
@@ -31,9 +48,15 @@
         }
         MyLibModule.decorators = [
             { type: core.NgModule, args: [{
-                        declarations: [HelloComponent],
+                        declarations: [
+                            HelloComponent,
+                            ByeComponent,
+                        ],
                         imports: [],
-                        exports: [HelloComponent]
+                        exports: [
+                            HelloComponent,
+                            ByeComponent,
+                        ]
                     },] }
         ];
         return MyLibModule;
@@ -79,6 +102,7 @@
     exports.BaseService = BaseService;
     exports.HelloComponent = HelloComponent;
     exports.MyLibModule = MyLibModule;
+    exports.ɵa = ByeComponent;
 
     Object.defineProperty(exports, '__esModule', { value: true });
 
