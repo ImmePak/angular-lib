@@ -1,4 +1,5 @@
 import { Component, NgModule } from '@angular/core';
+import { of } from 'rxjs';
 
 /**
  * @fileoverview added by tsickle
@@ -11,7 +12,7 @@ var HelloComponent = /** @class */ (function () {
     HelloComponent.decorators = [
         { type: Component, args: [{
                     selector: 'hello-cmp',
-                    template: ""
+                    template: "<h1>AAAAAAAAAAAAAAAAAAAAAA</h1>"
                 }] }
     ];
     return HelloComponent;
@@ -37,6 +38,43 @@ var MyLibModule = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
+ * Generated from: lib/base.service.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+var BaseService = /** @class */ (function () {
+    function BaseService() {
+    }
+    /**
+     * @protected
+     * @template T
+     * @param {?=} operation
+     * @param {?=} result
+     * @return {?}
+     */
+    BaseService.prototype.handleError = /**
+     * @protected
+     * @template T
+     * @param {?=} operation
+     * @param {?=} result
+     * @return {?}
+     */
+    function (operation, result) {
+        if (operation === void 0) { operation = 'operation'; }
+        return (/**
+         * @param {?} error
+         * @return {?}
+         */
+        function (error) {
+            console.log(operation);
+            console.error(error);
+            return of((/** @type {?} */ (result)));
+        });
+    };
+    return BaseService;
+}());
+
+/**
+ * @fileoverview added by tsickle
  * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
@@ -47,5 +85,5 @@ var MyLibModule = /** @class */ (function () {
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
-export { HelloComponent, MyLibModule };
+export { BaseService, HelloComponent, MyLibModule };
 //# sourceMappingURL=my-lib.js.map

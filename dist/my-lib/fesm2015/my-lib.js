@@ -1,4 +1,5 @@
 import { Component, NgModule } from '@angular/core';
+import { of } from 'rxjs';
 
 /**
  * @fileoverview added by tsickle
@@ -10,7 +11,7 @@ class HelloComponent {
 HelloComponent.decorators = [
     { type: Component, args: [{
                 selector: 'hello-cmp',
-                template: ""
+                template: "<h1>AAAAAAAAAAAAAAAAAAAAAA</h1>"
             }] }
 ];
 
@@ -31,6 +32,32 @@ MyLibModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
+ * Generated from: lib/base.service.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+class BaseService {
+    /**
+     * @protected
+     * @template T
+     * @param {?=} operation
+     * @param {?=} result
+     * @return {?}
+     */
+    handleError(operation = 'operation', result) {
+        return (/**
+         * @param {?} error
+         * @return {?}
+         */
+        (error) => {
+            console.log(operation);
+            console.error(error);
+            return of((/** @type {?} */ (result)));
+        });
+    }
+}
+
+/**
+ * @fileoverview added by tsickle
  * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
@@ -41,5 +68,5 @@ MyLibModule.decorators = [
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
-export { HelloComponent, MyLibModule };
+export { BaseService, HelloComponent, MyLibModule };
 //# sourceMappingURL=my-lib.js.map
